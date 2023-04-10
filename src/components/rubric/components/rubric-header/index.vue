@@ -12,9 +12,6 @@ import type { IRubric } from '@/types/rubric.interface';
 const props = defineProps<{
 	rubric: IRubric;
 }>();
-const emit = defineEmits<{
-	(event: 'select-child'): void;
-}>();
 
 const baseUrl = import.meta.env.VITE_BASE_URL;
 const checkedRubrics = new RubricatorSingleton().checkedRubrics;
